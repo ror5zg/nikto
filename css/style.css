@@ -84,7 +84,9 @@ body {
 }
 
 .illust-row .illust-item img {
-    max-width: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .author {
