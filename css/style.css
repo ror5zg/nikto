@@ -83,6 +83,10 @@ body {
     margin: 0.5em;
 }
 
+.illust-row .illust-item img {
+    max-width: 100px;
+}
+
 .author {
     display: flex;
 }
