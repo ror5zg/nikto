@@ -73,6 +73,14 @@ body {
     text-decoration: underline;
 }
 
+.row.blog-entries {
+    margin-block-end: 2.5em;
+}
+
+.row.blog-entries h4 {
+    margin-block-start: 2.5em;
+}
+
 .illust-row {
     display: flex;
     justify-content: center; /* 横方向（主軸）の中央寄せ */
