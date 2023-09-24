@@ -134,3 +134,7 @@ body {
     max-width: 500px;
     text-align: center;
 }
+
+.fslightbox-slide-btn.fslightbox-flex-centered {
+    display: none!important;
+}
