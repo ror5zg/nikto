@@ -1,0 +1,130 @@
+:root {
+    --main-bg-color: #000000;
+    --main-font-color: #ffffff;
+    --header-font-family: 'Times New Roman', HG明朝B;
+    --main-font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    --main-font-size: 0.75em;
+    --subhead-font-size: 1.325em;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+}
+
+.main {
+    padding: 0 0.625em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #909090;
+    padding-bottom: 0.5em;
+}
+
+.header h1 {
+    font-family: var(--header-font-family);
+    margin: 0.2em 0 0 0;
+}
+
+.header h1 a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.pure-menu-link.pure-menu-link {
+    font-size: var(--main-font-size);
+    color: var(--main-font-color);
+    padding: 0.5em 1em 0.5em 0em;
+}
+
+.pure-menu-link.pure-menu-link--custom:focus,
+.pure-menu-link.pure-menu-link--custom:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.container {
+    font-size: var(--main-font-size);
+}
+
+
+.row {
+    margin: 1em auto;
+    max-width: 500px;
+    word-break: break-all;
+}
+
+.row.content-subhead {
+    font-weight: bold;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #909090;
+}
+
+.row a:link,a:active,a:visited {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+.row a:hover {
+    text-decoration: underline;
+}
+
+.illust-row {
+    display: flex;
+    justify-content: center; /* 横方向（主軸）の中央寄せ */
+    align-items: center; /* 縦方向（交差軸）の中央寄せ */
+}
+
+.illust-row .illust-item {
+    margin: 0.5em;
+}
+
+.author {
+    display: flex;
+}
+
+.author .author-item {
+    margin-right: 1em;
+}
+
+.author .author-item--icon img {
+    display: block;
+    height: 100%;
+    max-width: 100px;
+    width: 100%
+}
+
+.author .author-item--text p {
+    margin: 0.3em;
+}
+
+.author .author-item--text .author-name {
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+
+.image-container img {
+    display: block;
+    height: 100%;
+    margin: 1em auto;
+    max-width: 500px;
+    width: 100%
+}
+
+.image-container .row {
+    margin-bottom: 1.5em;
+}
+
+.footer {
+    font-size: 0.5em;
+    color: #909090;
+    border-top: 1px solid #909090;
+    margin: 0 auto 50px;
+    padding: 1.675em 0;
+    max-width: 500px;
+    text-align: center;
+}
