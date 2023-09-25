@@ -81,6 +81,11 @@ body {
     margin-block-start: 2.5em;
 }
 
+.row .p5-sketch .p5Canvas {
+    width:640px;
+    margin: 0 auto;
+}
+
 .illust-row {
     display: flex;
     justify-content: center; /* 横方向（主軸）の中央寄せ */
