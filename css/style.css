@@ -138,6 +138,14 @@ body {
     margin-bottom: 1.5em;
 }
 
+.image-container.image-books img {
+    max-width: 250px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
 .footer {
     font-size: 0.5em;
     color: #909090;

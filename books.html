@@ -7,6 +7,8 @@
     <link rel="icon" href="./resources/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -36,9 +38,22 @@
 
         <div class="container">
             <div class="row content-subhead">
-                blog
+                books（作成中）
             </div>
-            <div id="content" class="row blog-entries"></div>
+            <div id="content" class="row books">
+                <!-- スライダーのコンテナ -->
+                <div class="swiper">
+                    <!-- 必要に応じたwrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- スライド -->
+                        <div class="swiper-slide image-container image-top image-books">
+                            <img src="./resources/images/comic/01_dance.jpg">
+                        </div>
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                    </div>
+                </div>
+            </div>
             <div class="footer">
                 © 2023 ror
             </div>
@@ -47,21 +62,22 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        (async () => {
-            try {
-                // blogディレクトリのマークダウンファイルの内容を取得
-                const response = await fetch('./resources/blog/blog.md');
-                if (!response.ok) {
-                    throw new Error(`${res.status} ${res.statusText}`);
-                }
-                const data = await response.text();
+        // (async () => {
+        //     try {
+        //         // blogディレクトリのマークダウンファイルの内容を取得
+        //         const response = await fetch('./resources/blog/blog.md');
+        //         if (!response.ok) {
+        //             throw new Error(`${res.status} ${res.statusText}`);
+        //         }
+        //         const data = await response.text();
 
-                // マークダウンをHTMLに変換し描画
-                document.getElementById('content').innerHTML = marked.parse(data);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        })();
+        //         // マークダウンをHTMLに変換し描画
+        //         // document.getElementById('content').innerHTML = marked.parse(data);
+        //     } catch (error) {
+        //         console.error('Error:', error);
+        //     }
+        // })();
+        const swiper = new Swiper(".swiper", {});
     </script>
 </body>
 </html>
